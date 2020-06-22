@@ -166,7 +166,6 @@ var Layout = (function() {
 //
 
 'use strict';
-
 var Charts = (function() {
 
 	// Variable
@@ -218,7 +217,7 @@ var Charts = (function() {
 					maintainAspectRatio: false,
 					defaultColor: (mode == 'dark') ? colors.gray[700] : colors.gray[600],
 					defaultFontColor: (mode == 'dark') ? colors.gray[700] : colors.gray[600],
-					defaultFontFamily: fonts.base,
+					defaultFontFamily: "'Varela Round'",
 					defaultFontSize: 13,
 					layout: {
 						padding: 0
@@ -842,10 +841,10 @@ var BarsChart = (function() {
 		var ordersChart = new Chart($chart, {
 			type: 'bar',
 			data: {
-				labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
 				datasets: [{
-					label: 'Sales',
-					data: [25, 20, 30, 22, 17, 29]
+					label: 'Quantidade',
+					data: [25, 20, 30, 22, 17, 29, 10 , 12, 11, 32, 20, 10]
 				}]
 			}
 		});
@@ -892,7 +891,7 @@ var SalesChart = (function() {
             ticks: {
               callback: function(value) {
                 if (!(value % 10)) {
-                  return '$' + value + 'k';
+                  return  value + '%';
                 }
               }
             }
@@ -905,21 +904,17 @@ var SalesChart = (function() {
               var yLabel = item.yLabel;
               var content = '';
 
-              if (data.datasets.length > 1) {
-                content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-              }
-
-              content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
+              content +=  yLabel + '%';
               return content;
             }
           }
         }
       },
       data: {
-        labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
         datasets: [{
           label: 'Performance',
-          data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+          data: [0, 20, 10, 30, 15, 40, 20, 60, 60, 70, 72, 80]
         }]
       }
     });
