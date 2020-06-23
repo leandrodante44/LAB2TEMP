@@ -297,9 +297,6 @@
                 <div class="col">
                   <h3 class="mb-0">Social traffic</h3>
                 </div>
-                <div class="col text-right">
-                  <a href="#!" class="btn btn-sm btn-primary">See all</a>
-                </div>
               </div>
             </div>
             <div class="table-responsive">
