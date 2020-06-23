@@ -23,16 +23,16 @@
     <meta name="author" content="Creative Tim">
     <title>LAB2TEMP | LAB2DEV</title>
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/brand/logo_mini.png" type="image/png">
+    <link rel="icon" href="../assets/img/brand/logo_mini.png" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <!-- Icons -->
-    <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
-    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
     <!-- Page plugins -->
     <!-- Argon CSS -->
-    <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
-    <link rel="stylesheet" href="assets/css/theme.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+    <link rel="stylesheet" href="../assets/css/theme.css" type="text/css">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
             <!-- Brand -->
             <div class="sidenav-header  align-items-center">
                 <a class="navbar-brand" href="dashboard.php">
-                    <img src="assets/img/brand/Lab2Temp.png" class="navbar-brand-img" alt="...">
+                    <img src="../assets/img/brand/Lab2Temp.png" class="navbar-brand-img" alt="...">
                 </a>
             </div>
             <div class="navbar-inner">
