@@ -213,7 +213,7 @@ var Charts = (function () {
             padding: 0,
           },
           legend: {
-            display: false,
+            display: true,
             position: "bottom",
             labels: {
               usePointStyle: true,
@@ -907,7 +907,7 @@ var SalesChart = (function () {
         ],
         datasets: [
           {
-            label: "Performance",
+            label: "Porcentagem",
             data: [0, 20, 10, 30, 15, 40, 20, 60, 60, 70, 72, 80],
           },
         ],
@@ -917,6 +917,66 @@ var SalesChart = (function () {
     // Save to jQuery object
 
     $chart.data("chart", salesChart);
+  }
+
+  // Events
+
+  if ($chart.length) {
+    init($chart);
+  }
+})();
+
+//
+// Sales chart
+//
+
+var DonutChart = (function () {
+  // Variables
+
+  var $chart = $("#chart-donut");
+
+  // Methods
+
+  function init($chart) {
+    var donutChart = new Chart($chart, {
+      type: "doughnut",
+      options: {
+        responsive: true,
+        legend: {
+          position: "top",
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true,
+		},
+		circumference: Math.PI,
+		rotation: -Math.PI,
+		weight: 200
+      },
+      data: {
+        datasets: [
+          {
+			data: [1000, 200],
+			backgroundColor: [
+				'#2dce89',
+				'#f5365c'
+			],
+			borderWidth: [
+				1,
+				1
+			],
+			label: 'Dataset 1'
+          },
+        ],
+
+        // These labels appear in the legend and in the tooltips when hovering different arcs
+        labels: ["Casos Normais", "Casos Criticos"],
+      },
+    });
+
+    // Save to jQuery object
+
+    $chart.data("chart", donutChart);
   }
 
   // Events
