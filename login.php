@@ -30,7 +30,7 @@
 </head>
 
 <body class="bg-default">
- 
+
   <!-- Main content -->
   <div class="main-content">
     <!-- Header -->
@@ -86,7 +86,7 @@
                   </label>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary my-4" >Entrar</button>
+                  <button type="button" class="btn btn-primary my-4">Entrar</button>
                 </div>
               </form>
             </div>
@@ -104,7 +104,7 @@
     </div>
   </div>
   <!-- Footer -->
-  
+
   <!-- Argon Scripts -->
   <!-- Core -->
   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
