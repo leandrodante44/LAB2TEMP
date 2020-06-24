@@ -63,6 +63,14 @@
             </div>
             <div class="card-body px-lg-5 py-lg-5">
               <form role="form">
+                <div div class="form-group mb-3">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-building"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Empresa" type="text" id="comp">
+                  </div>
+                </div>
                 <div class="form-group mb-3">
                   <div class="input-group input-group-merge input-group-alternative">
                     <div class="input-group-prepend">

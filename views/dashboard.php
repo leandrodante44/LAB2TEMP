@@ -1,5 +1,3 @@
-<?php $loadsession = true; include '../utils/session.php' ?>
-
 <?php  include 'menu.php' ?>
 <!-- Header -->
 <div class="header bg-gradient-success pb-6">
