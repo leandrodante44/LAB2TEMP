@@ -86,7 +86,7 @@
                   </label>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary my-4">Entrar</button>
+                  <button type="button" class="btn btn-primary my-4" onclick="location.href='dashboard.php'">Entrar</button>
                 </div>
               </form>
             </div>
