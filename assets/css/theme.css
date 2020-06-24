@@ -1,3 +1,7 @@
 .sidenav-header .navbar-brand .navbar-brand-img {
     max-height: 3rem;
 }
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Abrir";
+}
