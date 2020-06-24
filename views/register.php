@@ -19,14 +19,14 @@
   <meta name="author" content="Creative Tim">
   <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
   <!-- Favicon -->
-  <link rel="icon" href="../../assets/img/brand/Lab2Temp.png" type="image/png">
+  <link rel="icon" href="../assets/img/brand/Lab2Temp.png" type="image/png">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
-  <link rel="stylesheet" href="../../assets/vendor/nucleo/css/nucleo.css" type="text/css">
-  <link rel="stylesheet" href="../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Argon CSS -->
-  <link rel="stylesheet" href="../../assets/css/argon.css?v=1.2.0" type="text/css">
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
 </head>
 
 <body class="bg-default">
@@ -34,7 +34,7 @@
   <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="dashboard.html">
-        <img src="../../assets/img/brand/Lab2Temp.png">
+        <img src="../assets/img/brand/Lab2Temp.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
           <div class="row">
             <div class="col-6 collapse-brand">
               <a href="dashboard.html">
-                <img src="../../assets/img/brand/Lab2Temp.png">
+                <img src="../assets/img/brand/Lab2Temp.png">
               </a>
             </div>
             <div class="col-6 collapse-close">
@@ -136,11 +136,11 @@
                 <div class="text-muted text-center mt-2 mb-4"><small>Sign up with</small></div>
                 <div class="text-center">
                   <a href="#" class="btn btn-neutral btn-icon mr-4">
-                    <span class="btn-inner--icon"><img src="../../assets/img/icons/common/github.svg"></span>
+                    <span class="btn-inner--icon"><img src="../assets/img/icons/common/github.svg"></span>
                     <span class="btn-inner--text">Github</span>
                   </a>
                   <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon"><img src="../../assets/img/icons/common/google.svg"></span>
+                    <span class="btn-inner--icon"><img src="../assets/img/icons/common/google.svg"></span>
                     <span class="btn-inner--text">Google</span>
                   </a>
                 </div>
@@ -208,13 +208,13 @@
   
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/vendor/js-cookie/js.cookie.js"></script>
-  <script src="../../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="../../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
   <!-- Argon JS -->
-  <script src="../../assets/js/argon.js?v=1.2.0"></script>
+  <script src="../assets/js/argon.js?v=1.2.0"></script>
 </body>
 
 </html>

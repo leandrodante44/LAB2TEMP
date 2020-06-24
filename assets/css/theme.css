@@ -5,3 +5,38 @@
 .custom-file-input ~ .custom-file-label::after {
     content: "Abrir";
 }
+
+.shadow-0 {
+    box-shadow: none !important;
+}
+
+.icon-32 {
+    min-width: 20px;
+    min-height: 20px;
+    max-height: 32px;
+    max-width: 32px;
+}
+
+.filter-danger {
+    filter: invert(33%) sepia(51%) saturate(3880%) hue-rotate(328deg) brightness(97%) contrast(97%);
+}
+
+.info-tile {
+    width: 180px;
+    height: 100px;
+    box-shadow: 0px 0px 18px #f5365c2e;
+    border: 1px solid #f5365c;
+    border-radius: 10px;
+}
+
+.modal-backdrop.show{
+    opacity: .36;
+}
+
+.modal-backdrop {
+    z-index: 1060;
+}
+
+.modal {
+    z-index: 1070;
+}
