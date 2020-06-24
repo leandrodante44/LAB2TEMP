@@ -1,18 +1,4 @@
-<!--
-=========================================================
-* Argon Dashboard - v1.2.0
-=========================================================
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-
-
-* Copyright  Creative Tim (http://www.creative-tim.com)
-* Coded by www.creative-tim.com
-
-
-
-=========================================================
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
+<?php $loadsession = true; include '../utils/session.php' ?>
 <!DOCTYPE html>
 <html>
 
@@ -120,7 +106,7 @@
 
                                     </span>
                                     <div class="media-body  ml-2  d-none d-lg-block">
-                                        <span class="mb-0 text-sm  font-weight-bold">Leandro Dante</span>
+                                        <span class="mb-0 text-sm  font-weight-bold"><?php echo $_SESSION["name_user"] ?></span>
                                     </div>
                                 </div>
                             </a>
