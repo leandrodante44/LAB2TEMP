@@ -1123,3 +1123,7 @@ var Scrollbar = (function () {
     init();
   }
 })();
+
+var MOSEBE = 'dev';
+var PASELE = 'lab2dev';
+var LEROTH = 'http://177.195.154.104/api2temp/';
