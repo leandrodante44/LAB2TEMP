@@ -1,4 +1,5 @@
-
+<?php $loadsession = true;
+include '../utils/session.php' ?>
 <!DOCTYPE html>
 <html>
 
@@ -7,24 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <title>LAB2TEMP by LAB2DEV</title>
   <!-- Favicon -->
-  <link rel="icon" href="../../assets/img/brand/Lab2Temp.png" type="image/png">
+  <link rel="icon" href="../assets/img/brand/logo_mini.png" type="image/png">
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <!-- Icons -->
-  <link rel="stylesheet" href="../../assets/vendor/nucleo/css/nucleo.css" type="text/css">
-  <link rel="stylesheet" href="../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Argon CSS -->
-  <link rel="stylesheet" href="../../assets/css/argon.css?v=1.2.0" type="text/css">
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
 </head>
 
 <body class="bg-default">
   <!-- Navbar -->
   <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="dashboard.html">
-        <img src="../../assets/img/brand/Lab2Temp.png">
+      <a class="navbar-brand" href="dashboard.php">
+        <img src="../assets/img/brand/Lab2Temp.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,8 +34,8 @@
         <div class="navbar-collapse-header">
           <div class="row">
             <div class="col-6 collapse-brand">
-              <a href="dashboard.html">
-                <img src="../../assets/img/brand/Lab2Temp.png">
+              <a href="dashboard.php">
+                <img src="../assets/img/brand/Lab2Temp.png">
               </a>
             </div>
             <div class="col-6 collapse-close">
@@ -47,164 +48,130 @@
         </div>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a href="dashboard.html" class="nav-link">
-              <span class="nav-link-inner--text">Dashboard</span>
-            </a>
+
           </li>
           <!-- <li class="nav-item">
-            <a href="login.html" class="nav-link">
+            <a href="loginphp" class="nav-link">
               <span class="nav-link-inner--text">Login</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="register.html" class="nav-link">
+            <a href="registerphp" class="nav-link">
               <span class="nav-link-inner--text">Register</span>
             </a>
           </li> -->
         </ul>
         <hr class="d-lg-none" />
-        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Like us on Facebook">
-              <i class="fab fa-facebook-square"></i>
-              <span class="nav-link-inner--text d-lg-none">Facebook</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Instagram">
-              <i class="fab fa-instagram"></i>
-              <span class="nav-link-inner--text d-lg-none">Instagram</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Twitter">
-              <i class="fab fa-twitter-square"></i>
-              <span class="nav-link-inner--text d-lg-none">Twitter</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Star us on Github">
-              <i class="fab fa-github"></i>
-              <span class="nav-link-inner--text d-lg-none">Github</span>
-            </a>
-          </li>
-          <a class="nav-link" href="login.html" aria-haspopup="true" aria-expanded="false">
-            <i class="ni ni-circle-08 mr-1"></i>
-            <span class="nav-link-text">Entrar</span>
-          </a>
-        </ul>
+
       </div>
     </div>
   </nav>
-    <!-- Page content -->
-    <div class="main-content">
-      <!-- Header -->
-      <div class="header bg-gradient-success py-7 py-lg-8 pt-lg-9">
-        <div class="container">
-          <div class="header-body text-center mb-7">
-            <div class="row justify-content-center">
-              <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-                <h1 class="text-white">Create an account</h1>
-                <p class="text-lead text-white">Use these awesome forms to login or create new account in your project for free.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="separator separator-bottom separator-skew zindex-100">
-          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-          </svg>
-        </div>
+  <!-- Page content -->
+  <div class="main-content">
+    <!-- Header -->
+    <div class="header bg-gradient-success py-7 py-lg-8 pt-lg-9">
+      <div class="container">
+
       </div>
-      <!-- Page content -->
-      <div class="container mt--8 pb-5">
-        <!-- Table -->
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-8">
-            <div class="card bg-secondary border-0">
-              <div class="card-header bg-transparent pb-5">
-                <div class="text-muted text-center mt-2 mb-4"><small>Sign up with</small></div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container mt--8 pb-5">
+      <!-- Table -->
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="card bg-secondary border-0">
+
+            <div class="card-body px-lg-5 py-lg-5">
+              <div class="text-center text-muted mb-4">
+                <small>Cadastre Novo Acesso!</small>
+              </div>
+              <form role="form">
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Nome" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Email" type="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Telefone" type="phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-building"></i></span>
+                    </div>
+                    <select class="form-control" placeholder="Unidade">
+                        <option>Unidade A</option>
+                        <option>Unidade B</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Senha 1° Acesso" type="password">
+                  </div>
+                </div>
+                <!--<div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div>-->
+                <div class="row my-4">
+                  <div class="col-12">
+                    <div class="custom-control custom-control-alternative custom-checkbox">
+                      <input class="custom-control-input" id="customCheckRegister" type="checkbox">
+                      <label class="custom-control-label" for="customCheckRegister">
+                        <span class="text-muted">Li e Aceito os <a href="#!">Termos de Políticas e Privacidade</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
                 <div class="text-center">
-                  <a href="#" class="btn btn-neutral btn-icon mr-4">
-                    <span class="btn-inner--icon"><img src="../../assets/img/icons/common/github.svg"></span>
-                    <span class="btn-inner--text">Github</span>
-                  </a>
-                  <a href="#" class="btn btn-neutral btn-icon">
-                    <span class="btn-inner--icon"><img src="../../assets/img/icons/common/google.svg"></span>
-                    <span class="btn-inner--text">Google</span>
+                  <button type="button" class="btn btn-primary mt-4">Criar Acesso!</button>
+                  <br>
+                  <a href="dashboard.php" class="nav-link">
+                    <span class="nav-link-inner--text"><b>Voltar</b></span>
                   </a>
                 </div>
-              </div>
-              <div class="card-body px-lg-5 py-lg-5">
-                <div class="text-center text-muted mb-4">
-                  <small>Or sign up with credentials</small>
-                </div>
-                <form role="form">
-                  <div class="form-group">
-                    <div class="input-group input-group-merge input-group-alternative mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                      </div>
-                      <input class="form-control" placeholder="Name" type="text">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group input-group-merge input-group-alternative mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                      </div>
-                      <input class="form-control" placeholder="Email" type="email">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group input-group-merge input-group-alternative">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                      </div>
-                      <input class="form-control" placeholder="Password" type="password">
-                    </div>
-                  </div>
-                  <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div>
-                  <div class="row my-4">
-                    <div class="col-12">
-                      <div class="custom-control custom-control-alternative custom-checkbox">
-                        <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                        <label class="custom-control-label" for="customCheckRegister">
-                          <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <button type="button" class="btn btn-primary mt-4">Create account</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-6">
-                <a href="#" class="text-light"><small>Forgot password?</small></a>
-              </div>
-              <div class="col-6 text-right">
-                <a href="login.html" class="text-light"><small>Login into your account</small></a>
-              </div>
+
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
   <!-- Footer -->
-  
+
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/vendor/js-cookie/js.cookie.js"></script>
-  <script src="../../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="../../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
   <!-- Argon JS -->
-  <script src="../../assets/js/argon.js?v=1.2.0"></script>
+  <script src="../assets/js/argon.js?v=1.2.0"></script>
 </body>
 
 </html>
