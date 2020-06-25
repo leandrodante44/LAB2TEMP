@@ -1,11 +1,12 @@
 <?php include 'menu.php' ?>
+<?php include 'modalFeverAlert.php' ?>
 
     <div class="header bg-gradient-success pb-6">
       <div class="container-fluid">
         <div class="header-body">
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
-              <h6 class="h2 text-white d-inline-block mb-0">Configuracões</h6>
+              <h6 class="h2 text-white d-inline-block mb-0">Configurações</h6>
               <div class="col-lg-9 col-md-10 my-4">
                 <h1 class="display-2 text-default ">Olá Dante</h1>
                 <p class="text-default mt-0">Aqui é sua página de configurações, voce pode alterar suas credencias e gerenciar acessos ao sistema.</p>
@@ -22,24 +23,26 @@
           <div class="card card-profile bg-default">
             <!-- card header -->
             <div class="card-header text-center bg-default">
-              <span class="h2 text-white">cadastrar funcionários</span>
+              <span class="h2 text-white">Cadastrar funcionários</span>
             </div>
             <!-- card body -->
             <div class="card-body pt-0">
               <!-- Upload csv -->
-              <label for="csv" class="text-light mb-3">Cadastramento em massa</label>
               <form>
-              <div class="custom-file mb-3">
+                <label for="csv" class="text-light mb-3">Cadastramento em massa</label>
+                <div class="custom-file mb-3">
                   <input type="file" class="custom-file-input d-none" id="csv" name="filename">
                   <label class="custom-file-label"  id="csvName" for="csv">Encolha um arquivo...</label>
                 </div>
-                <!-- <output id="out">
-                    file contents will appear here
-                </output> -->
-            <button id="sendData" class="btn btn-primary" onclick="sendFile()">Enviar</button>
-
+                <button id="sendData" class="btn btn-primary" onclick="sendFile()">Enviar</button>
+              </form>
             </div>
           </div>
+          <a href="register.php" class="btn btn-default openPopup">Registrar</a>
+
+          <button  data-href="modalFeverAlert.php"  data-toggle="modal" data-target="#modalFeverAlert" class="btn btn-danger openPopup">Alerta de febre</button>
+
+
         </div>
         <div class="col-xl-8 order-xl-1">
           <div class="card">
