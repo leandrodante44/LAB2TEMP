@@ -17,6 +17,10 @@
     max-width: 32px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .filter-danger {
     filter: invert(33%) sepia(51%) saturate(3880%) hue-rotate(328deg) brightness(97%) contrast(97%);
 }
@@ -39,4 +43,8 @@
 
 .modal {
     z-index: 1070;
+}
+
+.card-stats {
+    min-height: 140px;
 }

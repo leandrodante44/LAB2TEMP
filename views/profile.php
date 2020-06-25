@@ -8,7 +8,7 @@
             <div class="col-lg-6 col-7">
               <h6 class="h2 text-white d-inline-block mb-0">Configurações</h6>
               <div class="col-lg-9 col-md-10 my-4">
-                <h1 class="display-2 text-default ">Olá Dante</h1>
+                <h1 class="display-2 text-default ">Olá <?php echo $_SESSION["name_user"] ?></h1>
                 <p class="text-default mt-0">Aqui é sua página de configurações, voce pode alterar suas credencias e gerenciar acessos ao sistema.</p>
               </div>
             </div>
@@ -26,19 +26,33 @@
               <span class="h2 text-white">Cadastrar funcionários</span>
             </div>
             <!-- card body -->
-            <div class="card-body pt-0">
+            <div class="card-body pt-0 pb-2">
               <!-- Upload csv -->
-              <form>
-                <label for="csv" class="text-light mb-3">Cadastramento em massa</label>
+              <div div class="form-group">
+                <label class="text-light mb-3">Cadastramento em massa</label>
                 <div class="custom-file mb-3">
                   <input type="file" class="custom-file-input d-none" id="csv" name="filename">
-                  <label class="custom-file-label"  id="csvName" for="csv">Encolha um arquivo...</label>
+                  <label class="custom-file-label pointer"  id="csvName" for="csv">Encolha um arquivo .csv</label>
                 </div>
-                <button id="sendData" class="btn btn-primary" onclick="sendFile()">Enviar</button>
-              </form>
+                <button id="sendData" type="button" class="btn btn-primary w-100" onclick="sendFile()">Enviar</button>
+                <a href="../assets/csv-exemplo.csv" download class="mt-3 float-right text-white"><small>exemplo de arquivo .csv</small></a>
+              </div>
             </div>
           </div>
-          <a href="register.php" class="btn btn-default openPopup">Registrar</a>
+
+          <div class="card card-profile bg-default">
+            <!-- card header -->
+            <div class="card-header text-center bg-default">
+              <span class="h2 text-white">Convidar</span>
+            </div>
+            <!-- card body -->
+            <div class="card-body pt-0 ">
+            <label class="text-light mb-3">Enviar um convite para cadastramento pessoal</label>
+              <a href="register.php" class="btn btn-primary w-100">Enviar convite</a>
+            </div>
+          </div>
+
+          <!-- <a href="register.php" class="btn btn-default openPopup">Registrar</a> -->
 
           <button  data-href="modalFeverAlert.php"  data-toggle="modal" data-target="#modalFeverAlert" class="btn btn-danger openPopup">Alerta de febre</button>
 
@@ -149,6 +163,8 @@
   <!-- Argon JS -->
   <script src="../assets/js/argon.js?v=1.2.0"></script>
   <script type="text/javascript" src="../controllers/profile.js"></script>
+  <!-- SWEETALERT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=" crossorigin="anonymous"></script>
 </body>
 
 </html>
