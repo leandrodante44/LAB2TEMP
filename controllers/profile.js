@@ -41,7 +41,6 @@ function sendFile(){
           Authorization: "Basic " + btoa(MOSEBE + ":" + PASELE),
         },
         success: function (data) {
-            swal("", "", "error");
             swal("Registros enviados com sucesso" , "", "success");
             $("#sendData").html("Enviar");
         },

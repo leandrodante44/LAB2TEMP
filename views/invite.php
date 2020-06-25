@@ -100,7 +100,7 @@ include '../utils/session.php' ?>
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Email" type="email">
+                    <input class="form-control" placeholder="Email" type="email" id="email">
                   </div>
                 </div>
                 <div class="form-group">
@@ -118,7 +118,7 @@ include '../utils/session.php' ?>
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-badge"></i></span>
                     </div>
-                    <select class="form-control" placeholder="Unidade">
+                    <select class="form-control" placeholder="Unidade" id="slcAccess" name="slcAccess">
                       <option>Selecione o Nivel de Acesso</option>
                       <option value="0">Nivel 0</option>
                       <option value="1">Nivel 1</option>
@@ -127,9 +127,9 @@ include '../utils/session.php' ?>
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary mt-4" onclick="sendInvite()">Enviar Convite!</button>
+                  <button id="btnSendInvite" type="button" class="btn btn-primary mt-4" onclick="sendInvite()">Enviar Convite!</button>
                   <br><br>
-                  <a href="dashboard.php" class="nav-link">
+                  <a href="profile.php" class="nav-link">
                     <span class="nav-link-inner--text"><b>Voltar</b></span>
                   </a>
                 </div>

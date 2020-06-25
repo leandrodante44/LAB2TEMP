@@ -48,7 +48,7 @@
             <!-- card body -->
             <div class="card-body pt-0 ">
             <label class="text-light mb-3">Enviar um convite para cadastramento pessoal</label>
-              <a href="register.php" class="btn btn-primary w-100">Enviar convite</a>
+              <a href="invite.php" class="btn btn-primary w-100">Enviar convite</a>
             </div>
           </div>
 
