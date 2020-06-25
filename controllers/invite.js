@@ -4,7 +4,7 @@ function getSession(){
     id_company = $('#hdnIdComp').val();
 }
 function sendInvite(){
-    
+
 }
 function carregarComboUni() {
 
@@ -41,7 +41,6 @@ function carregarComboUni() {
 function onInit() {
     getSession();
     carregarComboUni();
-  
 }
 $(document).ready(function () {
   onInit();
