@@ -1,3 +1,29 @@
+function getKPI_INIT(){
+    
+    id_company = $('#hdnIdComp').val();
+  
+    $.ajax({
+      type: "POST",
+      url: LEROTH + "api/dashboard/KPI_INIT.php",
+      dataType: "json",
+      data: {
+        COMP: id_company,
+       },
+  
+      headers: {
+        Authorization: "Basic " + btoa(MOSEBE + ":" + PASELE),
+      },
+      success: function (data) {
+        initKPI(data);
+      },
+      error: function (xhr) {
+          debugger
+        // if error occured
+        swal("Ops!", "Não foi possível receber os dados.", "error");
+      }
+    });
+  };
+
 function getCNCC_CHART(){
     
   id_company = $('#hdnIdComp').val();
@@ -78,8 +104,9 @@ function getSUSP_CHART(){
   };
 
 
+  
 function onInit() {
-    // getKPI_INIT();
+    getKPI_INIT();
     getSUSP_CHART();
     getINFC_CHART();
     // getLCAS_CHART();

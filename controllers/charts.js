@@ -56,7 +56,6 @@ initBarsChart = (data) => {
     // Save to jQuery object
     $chart.data("chart", ordersChart);
 }
-
   
 initSalesChart = (data) => {
     var $chart = $("#chart-sales-dark");
@@ -109,4 +108,18 @@ initSalesChart = (data) => {
     // Save to jQuery object
 
     $chart.data("chart", salesChart);
+}
+
+initKPI = (data) => {
+    $("#kpiTTEN").text(" " + data.TTEN);
+    var kpiTTEN_R = $("#kpiTTEN_R")
+    
+    kpiTTEN_R.text(" " + data.TTEN_R + "%");
+    
+    if(data.TTEN_R < 0 ){
+        kpiTTEN_R.addClass("text-danger fa-arrow-down");
+    }else{
+        kpiTTEN_R.addClass("text-success fa-arrow-up");
+    }
+
 }
