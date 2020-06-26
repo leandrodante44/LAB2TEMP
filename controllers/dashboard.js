@@ -40,7 +40,7 @@ function getSUSP_CHART(){
         Authorization: "Basic " + btoa(MOSEBE + ":" + PASELE),
       },
       success: function (data) {
-        initBarsChart(data);
+        initSalesChart(data);
       },
       error: function (xhr) {
           debugger
@@ -67,7 +67,7 @@ function getSUSP_CHART(){
         Authorization: "Basic " + btoa(MOSEBE + ":" + PASELE),
       },
       success: function (data) {
-        initSalesChart(data);
+        initBarsChart(data);
       },
       error: function (xhr) {
           debugger
