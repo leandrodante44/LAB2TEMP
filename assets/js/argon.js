@@ -1,4 +1,4 @@
-"use strict";
+
 
 var Layout = (function () {
   function pinSidenav() {
@@ -788,60 +788,6 @@ if ($map.length) {
   google.maps.event.addDomListener(window, "load", initMap);
 }
 
-//
-// Bars chart
-//
-
-var BarsChart = (function () {
-  //
-  // Variables
-  //
-
-  var $chart = $("#chart-bars");
-
-  //
-  // Methods
-  //
-
-  // Init chart
-  function initChart($chart) {
-    // Create chart
-    var ordersChart = new Chart($chart, {
-      type: "bar",
-      data: {
-        labels: [
-          "Janeiro",
-          "Fevereiro",
-          "Março",
-          "Abril",
-          "Maio",
-          "Junho",
-          "Julho",
-          "Agosto",
-          "Setembro",
-          "Outubro",
-          "Novembro",
-          "Dezembro",
-        ],
-        datasets: [
-          {
-            label: "Quantidade",
-            data: [25, 20, 30, 22, 17, 29, 10, 12, 11, 32, 20, 10],
-          },
-        ],
-      },
-    });
-
-    // Save to jQuery object
-    $chart.data("chart", ordersChart);
-  }
-
-  // Init chart
-  if ($chart.length) {
-    initChart($chart);
-  }
-})();
-
 ("use strict");
 
 //
@@ -917,66 +863,6 @@ var SalesChart = (function () {
     // Save to jQuery object
 
     $chart.data("chart", salesChart);
-  }
-
-  // Events
-
-  if ($chart.length) {
-    init($chart);
-  }
-})();
-
-//
-// Sales chart
-//
-
-var DonutChart = (function () {
-  // Variables
-
-  var $chart = $("#chart-donut");
-
-  // Methods
-
-  function init($chart) {
-    var donutChart = new Chart($chart, {
-      type: "doughnut",
-      options: {
-        responsive: true,
-        legend: {
-          position: "top",
-        },
-        animation: {
-          animateScale: true,
-          animateRotate: true,
-		},
-		circumference: Math.PI,
-		rotation: -Math.PI,
-		weight: 200
-      },
-      data: {
-        datasets: [
-          {
-			data: [1000, 200],
-			backgroundColor: [
-				'#2dce89',
-				'#f5365c'
-			],
-			borderWidth: [
-				1,
-				1
-			],
-			label: 'Dataset 1'
-          },
-        ],
-
-        // These labels appear in the legend and in the tooltips when hovering different arcs
-        labels: ["Casos Normais", "Casos Criticos"],
-      },
-    });
-
-    // Save to jQuery object
-
-    $chart.data("chart", donutChart);
   }
 
   // Events

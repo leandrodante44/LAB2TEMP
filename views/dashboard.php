@@ -9,6 +9,7 @@
         </div>
       </div>
       <!-- Card stats -->
+      <input type="hidden" id="hdnIdComp" name="hdnIdComp" value="<?php echo $_SESSION["company"] ?>">
       <div class="row">
         <div class="col-xl-3 col-md-6">
           <div class="card card-stats">
@@ -388,6 +389,8 @@
 <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
 <!-- Argon JS -->
 <script src="../assets/js/argon.js?v=1.2.0"></script>
+<script src="../controllers/charts.js"></script>
+<script src="../controllers/dashboard.js"></script>
 </body>
 
 </html>
