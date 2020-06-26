@@ -29,11 +29,11 @@ function sendInvite(){
       Authorization: "Basic " + btoa(MOSEBE + ":" + PASELE),
     },
     success: function (data) {
-        window.open(
-          "../views/sendMail.php?e=" + email,
-          "_self"
-        );
-        swal("", "Convite enviado para: " + email, "error");
+      swal("", "Convite enviado para: " + email, "success");
+      window.open(
+        "../views/sendMail.php?e=" + email,
+        "_self"
+      );
     },
     error: function (xhr) {
       // if error occured
