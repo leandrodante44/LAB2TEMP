@@ -143,10 +143,10 @@ initLCAS_CHART = (data) => {
                     '</td>'+
                     '<td>'+
                     '<div class="d-flex align-items-center">'+
-                        '<span class="mr-2 text-'+ getColorTemp( value.TEMP ) +'">' + value.TEMP + 'ºC</span>'+
+                        '<span class="mr-2 font-weight-bold text-'+ getColorTemp( value.TEMP ) +'">' + value.TEMP + 'ºC</span>'+
                         '<div>'+
                         '<div class="progress">'+
-                            '<div class="progress-bar bg-gradient-'+ getColorTemp( value.TEMP ) +'" role="progressbar" aria-valuenow='+ value.TEMP +' aria-valuemin="0" aria-valuemax="50" style="width: '+ value.TEMP / 0.5 +'%;"></div>'+
+                            '<div class="progress-bar bg-gradient-'+ getColorTemp( value.TEMP ) +'-inverted" role="progressbar" aria-valuenow='+ value.TEMP +' aria-valuemin="0" aria-valuemax="50" style="width: '+ value.TEMP / 0.5 +'%;"></div>'+
                         '</div>'+
                         '</div>'+
                     '</div>'+

@@ -103,32 +103,32 @@ function getLCAS_CHART(){
   });
 };
 
-  function getINFC_CHART(){
-    
-    id_company = $('#hdnIdComp').val();
+function getINFC_CHART(){
   
-    $.ajax({
-      type: "POST",
-      url: LEROTH + "api/dashboard/INFC_CHART.php",
-      dataType: "json",
-      data: {
-        comp: id_company,
-        type: "m"
-       },
-  
-      headers: {
-        Authorization: "Basic " + btoa(MOSEBE + ":" + PASELE),
+  id_company = $('#hdnIdComp').val();
+
+  $.ajax({
+    type: "POST",
+    url: LEROTH + "api/dashboard/INFC_CHART.php",
+    dataType: "json",
+    data: {
+      comp: id_company,
+      type: "m"
       },
-      success: function (data) {
-        initBarsChart(data);
-      },
-      error: function (xhr) {
-          debugger
-        // if error occured
-        swal("Ops!", "Não foi possível receber os dados.", "error");
-      }
-    });
-  };
+
+    headers: {
+      Authorization: "Basic " + btoa(MOSEBE + ":" + PASELE),
+    },
+    success: function (data) {
+      initBarsChart(data);
+    },
+    error: function (xhr) {
+        debugger
+      // if error occured
+      swal("Ops!", "Não foi possível receber os dados.", "error");
+    }
+  });
+};
 
 
   
