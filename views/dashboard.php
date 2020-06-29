@@ -17,7 +17,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">Total de entradas</h5>
+                  <h5 class="card-title text-uppercase text-muted mb-3">Total de entradas</h5>
                   <span id="kpiTTEN" class="h2 font-weight-bold mb-0"></span>
                 </div>
                 <div class="col-auto">
@@ -40,7 +40,7 @@
               <div class="row">
                 <div class="col">
                   <h5 class="card-title text-uppercase text-muted mb-0">Entradas na Normalidade</h5>
-                  <span class="h2 font-weight-bold mb-0">980</span>
+                  <span class="h2 font-weight-bold mb-0" id="kpiENNM"></span>
                 </div>
                 <div class="col-auto">
                   <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -50,7 +50,7 @@
               </div>
 
               <p class="mt-3 mb-0 text-sm">
-                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-success mr-2"><i class="fa" id="kpiENNM_R"></i></span>
                 <span class="text-nowrap">que mês passado</span>
               </p>
             </div>
@@ -62,8 +62,8 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">Entradas Criticas</h5>
-                  <span class="h2 font-weight-bold mb-0">20</span>
+                  <h5 class="card-title text-uppercase text-muted mb-3">Entradas Criticas</h5>
+                  <span class="h2 font-weight-bold mb-0" id="kpiENCR"></span>
                 </div>
                 <div class="col-auto">
                   <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -73,7 +73,7 @@
 
               </div>
               <p class="mt-3 mb-0 text-sm">
-                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-success mr-2"><i class="fa" id="kpiENCR_R"></i></span>
                 <span class="text-nowrap">que mês passado</span>
               </p>
             </div>
@@ -85,8 +85,8 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">indice de suspeitas</h5>
-                  <span class="h2 font-weight-bold mb-0">2%</span>
+                  <h5 class="card-title text-uppercase text-muted mb-3">indice de suspeitas</h5>
+                  <span class="h2 font-weight-bold mb-0" id="kpiIDSP"></span>
                 </div>
 
                 <div class="col-auto">
@@ -96,7 +96,7 @@
                 </div>
               </div>
               <p class="mt-3 mb-0 text-sm">
-                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-success mr-2"><i class="fa" id="kpiIDSP_R"></i></span>
                 <span class="text-nowrap">que mês passado</span>
               </p>
             </div>
@@ -178,7 +178,7 @@
         </div>
         <div class="table-responsive">
           <!-- Projects table -->
-          <table class="table align-items-center table-flush">
+          <table class="table align-items-center table-flush" id="table-LCAS">
             <thead class="thead-light">
               <tr>
                 <th scope="col">Nome do Colaborador</th>
@@ -187,9 +187,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <!-- <tr>
                 <th scope="row">
-                  Leandro Dante
+                  NOME
                 </th>
                 <td>
                   11:59
@@ -204,151 +204,7 @@
                     </div>
                   </div>
                 </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Flávio Alves Pereira
-                </th>
-                <td>
-                  11:55
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">39 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Daniel Dias Souza
-                </th>
-                <td>
-                  11:50
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">37 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Lael Jader
-                </th>
-                <td>
-                  11:40
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">37 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Jotinha Som
-                </th>
-                <td>
-                  11:30
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">37 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Lael Jader
-                </th>
-                <td>
-                  11:40
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">37 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Jotinha Som
-                </th>
-                <td>
-                  11:30
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">37 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Lael Jader
-                </th>
-                <td>
-                  11:40
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">37 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  Jotinha Som
-                </th>
-                <td>
-                  11:30
-                </td>
-                <td class="text-danger">
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2">37 ºC</span>
-                    <div>
-                      <div class="progress">
-                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
         </div>
