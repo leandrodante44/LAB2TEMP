@@ -129,8 +129,6 @@ function getINFC_CHART(){
     }
   });
 };
-
-
   
 function onInit() {
     getKPI_INIT();

@@ -82,17 +82,25 @@ initSalesChart = (data) => {
         ],
         },
         tooltips: {
-        callbacks: {
-            label: function (item, data) {
-            var label = data.datasets[item.datasetIndex].label || "";
-            var yLabel = item.yLabel;
-            var content = "";
+            callbacks: {
+                label: function (item, data) {
+                var label = data.datasets[item.datasetIndex].label || "";
+                var yLabel = item.yLabel;
+                var content = "";
 
-            content += yLabel + "%";
-            return content;
+                content += yLabel + "%";
+                return content;
+                },
             },
         },
-        },
+        // elements: {
+        //     point: {
+        //         backgroundColor: Charts.colors.theme['primary']
+        //     },
+        //     line: {
+        //         borderColor: Charts.colors.theme['info'],
+        //     },
+        // }
     },
     data: {
         labels: data.label,
@@ -132,8 +140,7 @@ setKPI = (kpiId, data, data_r, unit) => {
 
 initLCAS_CHART = (data) => {
     $.each(data, function(index, value){
-        /*console.log(value);*/
-        debugger
+
     var htmlTable = '<tr>'+
                     '<th scope="row">'+
                     value.NAME+
