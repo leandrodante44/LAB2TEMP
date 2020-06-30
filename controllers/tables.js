@@ -5,7 +5,10 @@ initLCAS_CHART = (data) => {
         var clone = template.content.cloneNode(true);
 
         clone.getElementById("name").innerHTML = item.NAME;
-        clone.getElementById("status").innerHTML = getStatus(item.STATUS);
+        
+        clone.getElementById("status").innerHTML = 
+            '<i class="bg-'+ getStatusColor(item.STATUS) +'"></i>'+
+            '<span class="status" >'+ getStatus(item.STATUS) +'</span>';
          
         var tempList = clone.getElementById("temp");
         
@@ -67,6 +70,19 @@ getStatus = (status) => {
             return "Afastado";
         default:
             return "Normal";
+     }
+}
+
+getStatusColor = (status) => {
+    switch(status){
+        case 0:
+            return "warnig";
+        case 1:
+            return "info";
+        case 2:
+            return "danger";
+        default:
+            return "success";
      }
 }
 

@@ -64,9 +64,7 @@
                   <td class="budget" id="hour">
                   </td>
                   <td>
-                    <span class="badge badge-dot mr-4">
-                      <i class="bg-warning"></i>
-                      <span class="status" id="status"></span>
+                    <span class="badge badge-dot mr-4" id="status">
                     </span>
                   </td>
                   <td>
@@ -75,12 +73,6 @@
                   </td>
                   <td>
                     <div class="d-flex align-items-center" id="progressCell">
-                    <!-- <span class="completion mr-2">37 °C</span>
-                      <div>
-                        <div class="progress" id="progressBar">
-                          <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                        </div>
-                      </div> -->
                     </div>
                   </td>
                   <td class="text-right">
