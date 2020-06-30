@@ -64,3 +64,31 @@
 .bg-gradient-danger-inverted {
     background: linear-gradient(-87deg, #f5365c 0, #f56036 100%) !important;
 }
+
+.text-blue {
+    color: #5e72e4 !important;
+}
+
+.tooltip-main {
+    background: #172b4d;
+}
+
+.tooltip-inner {
+    background: #172b4d;
+}
+
+.bs-tooltip-top .arrow::before {
+    border-top-color: #172b4d;
+}
+
+.bs-tooltip-bottom .arrow::before {
+    border-bottom: #172b4d;
+}
+
+.bs-tooltip-left .arrow::before {
+    border-left-color: #172b4d;
+}
+
+.bs-tooltip-right .arrow::before {
+    border-right-color: #172b4d;
+}

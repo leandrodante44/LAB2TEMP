@@ -86,7 +86,7 @@ function getLCAS_CHART(){
     url: LEROTH + "api/dashboard/LCAS_CHART.php",
     dataType: "json",
     data: {
-      COMP: id_company,
+      comp: id_company,
       },
 
     headers: {

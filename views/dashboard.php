@@ -1,4 +1,5 @@
 <?php  include 'menu.php' ?>
+<input type="hidden" id="hdnIdComp" name="hdnIdComp" value="<?php echo $_SESSION["company"] ?>">
 <!-- Header -->
 <div class="header bg-gradient-success pb-6">
   <div class="container-fluid">
@@ -9,7 +10,6 @@
         </div>
       </div>
       <!-- Card stats -->
-      <input type="hidden" id="hdnIdComp" name="hdnIdComp" value="<?php echo $_SESSION["company"] ?>">
       <div class="row">
         <div class="col-xl-3 col-md-6">
           <div class="card card-stats">
@@ -117,7 +117,7 @@
               <h6 class="text-light text-uppercase ls-1 mb-1">Porcentagem</h6>
               <h5 class="h3 text-white mb-0">Suspeita de Febre</h5>
             </div>
-            <div class="col">
+            <!-- <div class="col">
               <ul class="nav nav-pills justify-content-end">
                 <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">
                   <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">
@@ -132,7 +132,7 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="card-body">
@@ -178,7 +178,7 @@
         </div>
         <div class="table-responsive">
           <!-- Projects table -->
-          <table class="table align-items-center table-flush" id="table-LCAS">
+          <table class="table align-items-center table-flush" id="tblLCAS">
             <thead class="thead-light">
               <tr>
                 <th scope="col">Nome do Colaborador</th>
@@ -243,6 +243,8 @@
 <!-- Optional JS -->
 <script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
 <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+ <!-- SWEETALERT -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=" crossorigin="anonymous"></script>
 <!-- Argon JS -->
 <script src="../assets/js/argon.js?v=1.2.0"></script>
 <script src="../controllers/charts.js"></script>

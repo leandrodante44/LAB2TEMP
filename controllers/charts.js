@@ -134,33 +134,38 @@ setKPI = (kpiId, data, data_r, unit) => {
     if(data_r < 0 ){
         kpi_r.addClass("text-danger fa-arrow-down");
     }else{
-        kpi_r.addClass("text-success fa-arrow-up");
+        if(data_r > 0 ){
+            kpi_r.addClass("text-success fa-arrow-up");
+        }
+        else{
+            kpi_r.addClass("text-blue fa-circle");
+        }
     }
+    
 }
 
 initLCAS_CHART = (data) => {
     $.each(data, function(index, value){
-
-    var htmlTable = '<tr>'+
-                    '<th scope="row">'+
-                    value.NAME+
-                    '</th>'+
-                    '<td>'+
-                    value.HOUR+
-                    '</td>'+
-                    '<td>'+
-                    '<div class="d-flex align-items-center">'+
-                        '<span class="mr-2 font-weight-bold text-'+ getColorTemp( value.TEMP ) +'">' + value.TEMP + 'ºC</span>'+
-                        '<div>'+
-                        '<div class="progress">'+
-                            '<div class="progress-bar bg-gradient-'+ getColorTemp( value.TEMP ) +'-inverted" role="progressbar" aria-valuenow='+ value.TEMP +' aria-valuemin="0" aria-valuemax="50" style="width: '+ value.TEMP / 0.5 +'%;"></div>'+
-                        '</div>'+
-                        '</div>'+
-                    '</div>'+
-                    '</td>'+
-                '</tr>';
-    
-    $("#table-LCAS").append(htmlTable);
+        var htmlTable =
+        '<tr>'+
+            '<th scope="row">'+
+                value.NAME+
+            '</th>'+
+            '<td>'+
+                value.HOUR+
+            '</td>'+
+            '<td>'+
+            '<div class="d-flex align-items-center">'+
+                '<span class="mr-2 font-weight-bold text-'+ getColorTemp( value.TEMP ) +'">' + value.TEMP + 'ºC</span>'+
+                '<div>'+
+                '<div class="progress">'+
+                    '<div class="progress-bar bg-gradient-'+ getColorTemp( value.TEMP ) +'-inverted" role="progressbar" aria-valuenow='+ value.TEMP +' aria-valuemin="0" aria-valuemax="50" style="width: '+ value.TEMP / 0.5 +'%;"></div>'+
+                '</div>'+
+                '</div>'+
+            '</div>'+
+            '</td>'+
+        '</tr>';
+        $("#tblLCAS").append(htmlTable);
     });
 }
 
