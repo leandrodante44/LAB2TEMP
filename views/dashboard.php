@@ -172,7 +172,7 @@
               <h3 class="mb-0">Últimos Casos</h3>
             </div>
             <div class="col text-right">
-              <a href="#!" class="btn btn-sm btn-primary">Ver todos</a>
+              <a href="tables.php" class="btn btn-sm btn-primary">Ver todos</a>
             </div>
           </div>
         </div>

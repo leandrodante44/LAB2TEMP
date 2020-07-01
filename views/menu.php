@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 
+<?php include 'modalFeverAlert.php' ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,8 +45,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tables.php">
-                                <i class="fas fa-exclamation-circle text-danger"></i>
-                                <span class="nav-link-text">Ocorrências</span>
+                                <i class="far fa-list-alt text-info"></i>
+                                <span class="nav-link-text">Medições</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -54,7 +55,7 @@
                                 <span class="nav-link-text">Configurações</span>
                             </a>
                         </li>
-
+                        <button  data-href="modalFeverAlert.php"  data-toggle="modal" data-target="#modalFeverAlert" class="btn btn-danger openPopup">Alerta de febre</button>
                 </div>
             </div>
         </div>
@@ -72,7 +73,8 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="Buscar Colaborador" type="text">
+                                <input class="form-control" placeholder="Buscar Colaborador" type="text" id="search" onkeyup="filterTable()">
+                                <!-- <input class="form-control" placeholder="Buscar Colaborador" id="search" type="search" onsearch="onSearch()"> -->
                             </div>
                         </div>
                         <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
@@ -114,24 +116,24 @@
                                 <div class="dropdown-header noti-title">
                                     <h6 class="text-overflow m-0">Bem Vindo!</h6>
                                 </div>
-                                <a href="#!" class="dropdown-item">
+                                <!-- <a href="#!" class="dropdown-item">
                                     <i class="ni ni-single-02"></i>
                                     <span>Meu Perfil</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
+                                </a> -->
+                                <a href="profile.php" class="dropdown-item">
                                     <i class="ni ni-settings-gear-65"></i>
                                     <span>Configurações</span>
                                 </a>
                                 <!--<a href="#!" class="dropdown-item">
-                  <i class="ni ni-calendar-grid-58"></i>
-                  <span>Activity</span>
-                </a>-->
-                                <a href="#!" class="dropdown-item">
+                                    <i class="ni ni-calendar-grid-58"></i>
+                                    <span>Activity</span>
+                                </a>-->
+                                <a href="https://lab2dev.com" class="dropdown-item">
                                     <i class="ni ni-support-16"></i>
                                     <span>Suporte</span>
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a href="#!" class="dropdown-item">
+                                <a href="logoff.php" class="dropdown-item">
                                     <i class="ni ni-user-run"></i>
                                     <span>Sair</span>
                                 </a>

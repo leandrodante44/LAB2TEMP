@@ -1,5 +1,4 @@
 <?php include 'menu.php' ?>
-<?php include 'modalFeverAlert.php' ?>
 
     <div class="header bg-gradient-success pb-6">
       <div class="container-fluid">
@@ -8,7 +7,7 @@
             <div class="col-lg-6 col-7">
               <h6 class="h2 text-white d-inline-block mb-0">Configurações</h6>
               <div class="col-lg-9 col-md-10 my-4">
-                <h1 class="display-2 text-default ">Olá <?php echo $_SESSION["name_user"] ?></h1>
+                <h1 class="display-2 text-default shadow-text">Olá <?php echo $_SESSION["name_user"] ?></h1>
                 <p class="text-default mt-0">Aqui é sua página de configurações, voce pode alterar suas credencias e gerenciar acessos ao sistema.</p>
               </div>
             </div>
@@ -54,9 +53,6 @@
 
           <!-- <a href="register.php" class="btn btn-default openPopup">Registrar</a> -->
 
-          <button  data-href="modalFeverAlert.php"  data-toggle="modal" data-target="#modalFeverAlert" class="btn btn-danger openPopup">Alerta de febre</button>
-
-
         </div>
         <div class="col-xl-8 order-xl-1">
           <div class="card">
@@ -71,6 +67,9 @@
               </div>
             </div>
             <div class="card-body">
+            <a href="changePassword.php" class="btn btn-primary">Alterar senha</a>
+
+
               <!-- <form>
                 <h6 class="heading-small text-muted mb-4">User information</h6>
                 <div class="pl-lg-4">

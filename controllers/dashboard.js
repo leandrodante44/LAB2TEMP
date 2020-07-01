@@ -142,3 +142,9 @@ $(document).ready(function () {
   onInit();
 });
 
+// onSearch = () =>{
+//   window.open(
+//     "tables.php",
+//     "_self"
+//   );
+// }

@@ -92,3 +92,7 @@
 .bs-tooltip-right .arrow::before {
     border-right-color: #172b4d;
 }
+
+.shadow-text { 
+    text-shadow: 2px 2px 3px #ffffff80;
+}

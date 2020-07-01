@@ -6,7 +6,7 @@
     <div class="header-body">
       <div class="row align-items-center py-4">
         <div class="col-lg-6 col-7">
-          <h6 class="h2 text-white d-inline-block mb-0">Ocorrências</h6>
+          <h6 class="h2 text-white d-inline-block mb-0">Medições</h6>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
       <div class="card">
         <!-- Card header -->
         <div class="card-header border-0">
-          <h3 class="mb-0">Casos Críticos</h3>
+          <h3 class="mb-0">Histórico dos colaboradores</h3>
         </div>
         <!-- Light table -->
         <div class="table-responsive">
@@ -80,10 +80,10 @@
                       <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-ellipsis-v"></i>
                       </a>
-                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                        <a class="dropdown-item" href="#">Action</a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" id="action">
+                        <!-- <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Something else here</a> -->
                       </div>
                     </div>
                   </td>
@@ -93,7 +93,7 @@
           </table>
         </div>
         <!-- Card footer -->
-        <div class="card-footer py-4">
+        <!-- <div class="card-footer py-4">
           <nav aria-label="...">
             <ul class="pagination justify-content-end mb-0">
               <li class="page-item disabled">
@@ -117,7 +117,7 @@
               </li>
             </ul>
           </nav>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
