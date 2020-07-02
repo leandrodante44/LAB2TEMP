@@ -131,20 +131,13 @@ function getINFC_CHART(){
 };
   
 function onInit() {
-    getKPI_INIT();
-    getSUSP_CHART();
-    getINFC_CHART();
-    getLCAS_CHART();
-    getCNCC_CHART();
+    // getKPI_INIT();
+    // getSUSP_CHART();
+    // getINFC_CHART();
+    // getLCAS_CHART();
+    // getCNCC_CHART();
 }
 
 $(document).ready(function () {
   onInit();
 });
-
-// onSearch = () =>{
-//   window.open(
-//     "tables.php",
-//     "_self"
-//   );
-// }

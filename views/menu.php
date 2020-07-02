@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 
-<?php include 'modalFeverAlert.php' ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,8 +19,11 @@
     <!-- Argon CSS -->
     <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
     <link rel="stylesheet" href="../assets/css/theme.css" type="text/css">
-</head>
+    
+    <script src="../controllers/menu.js"></script>
 
+</head>
+<?php include 'modalFeverAlert.php' ?>
 <body>
     <!-- Sidenav -->
     <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
@@ -73,7 +75,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="Buscar Colaborador" type="text" id="search" onkeyup="filterTable()">
+                                <input class="form-control" placeholder="Buscar Colaborador" type="search" id="searchInput" onkeyup="filterTable()" onsearch="onSearch()">
                                 <!-- <input class="form-control" placeholder="Buscar Colaborador" id="search" type="search" onsearch="onSearch()"> -->
                             </div>
                         </div>

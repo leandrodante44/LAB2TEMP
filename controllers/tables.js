@@ -1,4 +1,5 @@
 initLCAS_CHART = (data) => {
+
     $.each(data, function(index, item){
 
         var template = $("template")[0];
@@ -60,10 +61,6 @@ initLCAS_CHART = (data) => {
     });
 }
 
-setAction = (item) => {
-debugger
-}
-
 getStatus = (status) => {
     switch(status){
         case 0:
@@ -107,6 +104,7 @@ getColorTemp = (temp) => {
 }
 
 function getLCAS_TABLE(){
+   
     id_company = $('#hdnIdComp').val();
 
     $.ajax({
@@ -129,8 +127,8 @@ function getLCAS_TABLE(){
         swal("Ops!", "Não foi possível receber os dados.", "error");
       }
     });
-};
-  
+}
+
 function onInit() {
     getLCAS_TABLE();
 }
@@ -138,22 +136,3 @@ function onInit() {
 $(document).ready(function () {
   onInit();
 });
-
-function filterTable() {
-    var input, filter, table, tr, i, txtValue;
-    input = document.getElementById("search");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("tblLCAS");
-    tr = table.getElementsByTagName("tr");
-    for (i = 1; i < tr.length; i++) {
-      val = tr[i].getElementsByClassName("name")[0];
-      if (val) {
-        txtValue = val.textContent || val.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }       
-    }
-  }
