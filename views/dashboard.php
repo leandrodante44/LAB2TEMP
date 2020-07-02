@@ -178,7 +178,7 @@
         </div>
         <div class="table-responsive">
           <!-- Projects table -->
-          <table class="table align-items-center table-flush" id="tblLCAS">
+          <table class="table align-items-center table-flush" id="tblLCASBoard">
             <thead class="thead-light">
               <tr>
                 <th scope="col">Nome do Colaborador</th>

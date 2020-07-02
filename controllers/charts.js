@@ -165,7 +165,7 @@ initLCAS_CHART = (data) => {
             '</div>'+
             '</td>'+
         '</tr>';
-        $("#tblLCAS").append(htmlTable);
+        $("#tblLCASBoard").append(htmlTable);
     });
 }
 
